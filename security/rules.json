@@ -1,0 +1,28 @@
+{
+    "email_patterns": [
+        "urgente",
+        "seu acesso será bloqueado",
+        "confirme seus dados",
+        "verificação pendente",
+        "pagamento atrasado",
+        "recuperação de senha"
+    ],
+    "pix_patterns": [
+        "comprovante",
+        "erro ao enviar pix",
+        "preciso que envie novamente",
+        "envio duplicado"
+    ],
+    "fake_bank_domains": [
+        "itau-atendimento.com",
+        "caixa-info.net",
+        "bradesco-suporte.org",
+        "nubank-atualizar.com"
+    ],
+    "dangerous_actions": [
+        "baixar arquivo",
+        "instalar aplicativo",
+        "informar código",
+        "compartilhar senha"
+    ]
+}
