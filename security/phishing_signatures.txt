@@ -1,0 +1,10 @@
+Seu banco bloqueou sua conta temporariamente.
+Detectamos uma atividade incomum no seu dispositivo.
+Clique no link abaixo para liberar sua conta.
+Sua senha expirou. Atualize imediatamente.
+Você possui um PIX pendente.
+Sua chave será desativada se você não confirmar.
+Atualize seu aplicativo para evitar bloqueio.
+Você foi selecionado para um prêmio exclusivo.
+Confirme sua identidade para continuar.
+O pacote não pôde ser entregue.
