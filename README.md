@@ -26,18 +26,21 @@ Este projeto foi desenvolvido com foco em educação digital e proteção de pes
 ## 📂 Estrutura do Repositório
 
 antigolpe_ia/
-│── analisador_ia.py # Código principal da análise de golpes
-│── requirements.txt # Dependências do projeto
-│── LICENSE # Licença MIT
-│── README.md # Documentação do projeto
-│── examples/ # Exemplos prontos para testar a ferramenta
-│ ├── exemplo_1.txt
-│ ├── exemplo_2.txt
-│ └── exemplo_3.txt
-│── security/ # Base de conhecimento de segurança
-├── rules.json
-├── url_blacklist.txt
-└── phishing_signatures.txt
+│
+├── analisador_ia.py          # Código principal da análise de golpes
+├── requirements.txt          # Dependências do projeto (bibliotecas Python)
+├── LICENSE                   # Licença MIT
+├── README.md                 # Documentação e guia do projeto
+│
+├── examples/                 # Exemplos prontos para testar a ferramenta
+│   ├── exemplo_1.txt
+│   ├── exemplo_2.txt
+│   └── exemplo_3.txt
+│
+└── security/                 # Base de conhecimento e regras de segurança
+    ├── rules.json            # Regras de detecção de engenharia social e padrões de risco
+    ├── url_blacklist.txt     # Lista de URLs conhecidas como maliciosas
+    └── phishing_signatures.txt # Assinaturas de textos e frases comuns em phishing
 
 ---
 
@@ -75,67 +78,72 @@ No terminal:
 
 ```bash
 pip install -r requirements.txt
-2️⃣ Execute o analisador
-bash
-Copiar código
+
+
+### 2️⃣ Execute o analisador
+
+```bash
 python analisador_ia.py
 Você será solicitado a inserir uma mensagem ou URL.
 A ferramenta dirá se é suspeita e por quê.
 
-📌 Exemplos de Uso
-Exemplo 1
-arduino
-Copiar código
+## 📌 Exemplos de Uso
+
+### Exemplo 1
+
+**Entrada:**
 "Seu banco bloqueou sua conta. Clique no link abaixo para liberar."
 Saída esperada:
 
 
 ⚠️ Alerta: Essa mensagem contém forte indicação de phishing.
 Motivos: urgência, pedido de clique, padrão de bloqueio falso.
-Exemplo 2
-arduino
-Copiar código
+
+
+### Exemplo 2
+
+**Entrada:**
 "Oi mãe, troquei de número. Preciso que me faça um PIX urgente."
-Saída:
 
 
-⚠️ Possível golpe do falso familiar.
-🧱 Próximas Funcionalidades
-API REST com FastAPI
+**Saída:**
 
-Integração com RAG (modelo usando PDFs reais de golpes)
+"Possível golpe do falso familiar."
 
-Dashboard para análise
 
-Classificador treinado com IA
 
-Detecção de links automaticamente (regex + heurísticas)
+## 🧱 Próximas Funcionalidades
 
-Modo “educação digital” explicando cada golpe para leigos
+* **API REST com FastAPI:** Permitir que outras aplicações e serviços consumam a lógica de análise de golpes como um serviço web.
+* **Integração com RAG (Retrieval-Augmented Generation):** Utilizar um modelo de linguagem (LLM) que consulta uma base de dados externa (seus PDFs reais de golpes) para gerar respostas mais informadas e contextuais.
+* **Dashboard para análise:** Criar uma interface gráfica para visualizar estatísticas de uso, tipos de golpes mais detectados e tendências.
+* **Classificador treinado com IA:** Desenvolver um modelo de *machine learning* customizado (em vez de usar uma API externa) para classificar o risco da mensagem.
+* **Detecção de links automaticamente:** Implementar o uso de **regex** (expressões regulares) e **heurísticas** avançadas para extrair e analisar URLs presentes no corpo da mensagem.
+* **Modo “educação digital”:** Adicionar uma funcionalidade que, ao detectar um golpe, explique o mecanismo da fraude (engenharia social, gatilhos) em **linguagem simples para leigos**.
 
-🤝 Contribuições
+## 🤝 Contribuições
+
 Sinta-se livre para enviar:
+* melhorias de código
+* novas regras
+* links suspeitos
+* exemplos de golpes reais
+* sugestões de novas features
 
-melhorias de código
+## 📄 Licença
 
-novas regras
+Este projeto está licenciado sob a **MIT License** – veja o arquivo `LICENSE` para mais detalhes.
 
-links suspeitos
+---
 
-exemplos de golpes reais
+## 👩‍💻 Autora
 
-sugestões de novas features
-
-📄 Licença
-Este projeto está licenciado sob a MIT License – veja o arquivo LICENSE para mais detalhes.
-
-👩‍💻 Autora
-Ana Karina
+**Ana Karina**
 GenAI Engineer | CloudSecurity
 GitHub: https://github.com/KarinaCarvalhoCloud
+
 ---
 
 ## ⚙️ Arquitetura e Estrutura
-
 
 O projeto segue uma arquitetura modular, facilitando a manutenção e expansão.
