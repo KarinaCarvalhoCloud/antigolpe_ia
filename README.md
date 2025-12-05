@@ -17,22 +17,6 @@ Este projeto foi desenvolvido com foco em educação digital e proteção de pes
 - Construir um portfólio profissional de Segurança e Inteligência Artificial.
 - Evoluir para uma API e futuramente um app/aplicativo educativo.
 
-## 📂 Estrutura do Repositório
-plaintext
-antigolpe_ia/
-├── analisador_ia.py          # Código principal da análise de golpes
-├── requirements.txt          # Dependências do projeto (bibliotecas Python)
-├── LICENSE                   # Licença MIT
-├── README.md                 # Documentação e guia do projeto
-├── examples/                 # Exemplos prontos para testar a ferramenta
-│   ├── exemplo_1.txt
-│   ├── exemplo_2.txt
-│   └── exemplo_3.txt
-└── security/                 # Base de conhecimento e regras de segurança
-    ├── rules.json            # Regras de detecção de engenharia social e padrões de risco
-    ├── url_blacklist.txt      # Lista de URLs conhecidas como maliciosas
-    └── phishing_signatures.txt # Assinaturas de textos e frases comuns em phishing
-
 
 ## 🧠 Como a análise funciona
 A detecção utiliza várias camadas:
@@ -77,10 +61,12 @@ Você será solicitado a inserir uma mensagem ou URL. A ferramenta dirá se é s
 ## 📌 Exemplos de Uso
 ### Exemplo 1
 *Entrada:* "Seu banco bloqueou sua conta. Clique no link abaixo para liberar."
+
 Saída esperada: ⚠️ Alerta: Essa mensagem contém forte indicação de phishing. Motivos: urgência, pedido de clique, padrão de bloqueio falso.
 
 ### Exemplo 2
 *Entrada:* "Oi mãe, troquei de número. Preciso que me faça um PIX urgente."
+
 *Saída:* "Possível golpe do falso familiar."
 
 ## 🧱 Próximas Funcionalidades
@@ -111,3 +97,4 @@ GitHub: https://github.com/KarinaCarvalhoCloud
 O projeto segue uma arquitetura modular, facilitando a manutenção e expansão.
 
 ```
+
