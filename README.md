@@ -1,100 +1,43 @@
-# AntiGolpe IA — Assistente Inteligente de Prevenção a Golpes
+# Antigolpe IA
 
-O **AntiGolpe IA** é um projeto de Segurança + Inteligência Artificial criado para ajudar usuários comuns a identificarem possíveis golpes, mensagens suspeitas, links maliciosos e tentativas de engenharia social. O sistema utiliza regras de segurança, análise contextual de texto e um modelo de IA para detectar sinais de fraude digital, como:
+Projeto em desenvolvimento com foco na identificação de mensagens potencialmente fraudulentas, utilizando regras heurísticas e técnicas básicas de Inteligência Artificial aplicadas à segurança da informação.
 
-- phishing bancário
-- golpes do PIX
-- falsas atualizações de apps
-- mensagens de urgência
-- links maliciosos
+O objetivo principal é estudar, na prática, como a IA pode auxiliar na prevenção de golpes digitais, especialmente aqueles disseminados por texto (SMS, WhatsApp, e-mail e redes sociais).
 
-Este projeto foi desenvolvido com foco em educação digital e proteção de pessoas vulneráveis online.
+---
 
-## 🚀 Objetivos do Projeto
-- Ajudar pessoas que não entendem de tecnologia a evitar golpes.
-- Criar um sistema simples que analisa mensagens e diz se é suspeita.
-- Utilizar IA e regras de segurança de forma transparente.
-- Construir um portfólio profissional de Segurança e Inteligência Artificial.
-- Evoluir para uma API e futuramente um app/aplicativo educativo.
+## Motivação
 
+Golpes digitais fazem parte do cotidiano de usuários e empresas, muitas vezes explorando engenharia social em mensagens simples.  
+Este projeto nasceu como um estudo prático para compreender:
 
-## 🧠 Como a análise funciona
-A detecção utiliza várias camadas:
+- Padrões comuns em mensagens de golpe
+- Como estruturar regras iniciais de detecção
+- Como evoluir essas regras para abordagens baseadas em IA
+- Como transformar isso em uma solução escalável no futuro
 
-### ✔️ 1. Regras de Segurança
-Via `security/rules.json`, contendo:
+---
 
-- padrões comuns de golpes
-- termos de urgência
-- ações perigosas
-- domínios falsos
+## O que o projeto faz atualmente
 
-### ✔️ 2. Assinaturas de phishing
-Frases comuns encontradas em golpes reais.
+- Analisa textos informados pelo usuário
+- Identifica padrões comuns de golpes (urgência, pedidos suspeitos, links, linguagem típica)
+- Retorna uma indicação de risco com base em regras definidas
+- Serve como base para evolução com modelos de IA
 
-### ✔️ 3. Lista negra de URLs
-`url_blacklist.txt` contém links maliciosos ou suspeitos.
+---
 
-### ✔️ 4. Análise de IA
-Interpretação contextual da mensagem para identificar:
+## Tecnologias utilizadas
 
-- manipulação emocional
-- urgência artificial
-- tentativa de extorquir dados
-- engenharia social
+- Python
+- Manipulação e análise de texto
+- Conceitos iniciais de IA aplicada à segurança
+- Estrutura preparada para futura integração com APIs e cloud
 
-## ▶️ Como Executar
-### 1️⃣ Instale as dependências
-No terminal:
+---
 
-bash
-pip install -r requirements.txt
+## Estrutura do projeto
 
+O projeto está sendo organizado de forma incremental, priorizando clareza e facilidade de evolução.
 
-### 2️⃣ Execute o analisador
-
-bash
-python analisador_ia.py
-
-Você será solicitado a inserir uma mensagem ou URL. A ferramenta dirá se é suspeita e por quê.
-
-## 📌 Exemplos de Uso
-### Exemplo 1
-*Entrada:* "Seu banco bloqueou sua conta. Clique no link abaixo para liberar."
-
-Saída esperada: ⚠️ Alerta: Essa mensagem contém forte indicação de phishing. Motivos: urgência, pedido de clique, padrão de bloqueio falso.
-
-### Exemplo 2
-*Entrada:* "Oi mãe, troquei de número. Preciso que me faça um PIX urgente."
-
-*Saída:* "Possível golpe do falso familiar."
-
-## 🧱 Próximas Funcionalidades
-- *API REST com FastAPI:* Permitir que outras aplicações e serviços consumam a lógica de análise de golpes como um serviço web.
-- *Integração com RAG (Retrieval-Augmented Generation):* Utilizar um modelo de linguagem (LLM) que consulta uma base de dados externa (seus PDFs reais de golpes) para gerar respostas mais informadas e contextuais.
-- *Dashboard para análise:* Criar uma interface gráfica para visualizar estatísticas de uso, tipos de golpes mais detectados e tendências.
-- *Classificador treinado com IA:* Desenvolver um modelo de _machine learning_ customizado (em vez de usar uma API externa) para classificar o risco da mensagem.
-- *Detecção de links automaticamente:* Implementar o uso de *regex* (expressões regulares) e *heurísticas* avançadas para extrair e analisar URLs presentes no corpo da mensagem.
-- *Modo “educação digital”:* Adicionar uma funcionalidade que, ao detectar um golpe, explique o mecanismo da fraude (engenharia social, gatilhos) em *linguagem simples para leigos*.
-
-## 🤝 Contribuições
-Sinta-se livre para enviar:
-
-- melhorias de código
-- novas regras
-- links suspeitos
-- exemplos de golpes reais
-- sugestões de novas features
-
-## 📄 Licença
-Este projeto está licenciado sob a *MIT License* – veja o arquivo `LICENSE` para mais detalhes.
-
-## 👩‍💻 Autora
-**Ana Karina**
-GenAI Engineer | CloudSecurity
-GitHub: https://github.com/KarinaCarvalhoCloud
-## ⚌️ Arquitetura e Estrutura
-O projeto segue uma arquitetura modular, facilitando a manutenção e expansão.
-
-```
 
