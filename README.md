@@ -41,3 +41,22 @@ Este projeto nasceu como um estudo prático para compreender:
 O projeto está sendo organizado de forma incremental, priorizando clareza e facilidade de evolução.
 
 
+*(A estrutura pode evoluir conforme novas funcionalidades forem adicionadas.)*
+
+---
+
+## Próximos passos planejados
+
+- Evoluir a detecção baseada em regras para modelos de IA
+- Criar uma API simples para consumo externo
+- Adicionar testes automatizados
+- Preparar o projeto para execução em ambiente cloud
+- Documentar decisões de arquitetura
+
+---
+
+## Observação
+
+Este é um projeto educacional e experimental, em constante evolução, com foco em aprendizado prático nas áreas de segurança da informação, cloud e inteligência artificial.
+
+
